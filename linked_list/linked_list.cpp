@@ -20,7 +20,8 @@ class LinkedList
             , tail(nullptr)
             , length(0)
         {}
-        // Have to release all the nodes in a destructor
+
+        // class destructor - delete all nodes
         ~LinkedList()
         {
             for (Node* loop = head; loop != nullptr;) {

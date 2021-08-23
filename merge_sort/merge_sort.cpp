@@ -37,7 +37,7 @@ void buffer_merge_sort (T begin, T end, T begin_buffer)
     }
 
     std::size_t split      = size / 2;
-    T           mid        = std::next (begin, split);
+    T           mid        = std::next (begin,        split);
     T           mid_buffer = std::next (begin_buffer, split);
 
     buffer_merge_sort (begin, mid, begin_buffer);
